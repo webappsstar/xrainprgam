@@ -2,39 +2,39 @@
 	"log": {
 		"access": "/dev/null",
 		"error": "/dev/null",
-		"loglevel": "warning"
+		"loglevel": "none"
 	},
 	"inbounds": [{
 			"port": 8001,
-			"listen": "127.0.0.1",
+			"listen": "0.0.0.0",
 			"protocol": "vmess",
 			"settings": {
 				"clients": [{
-					"id": "${UUID}",
+					"id": "fd1b4a56-3e63-11ee-8084-9f478f569d2c",
 					"alterId": 0
 				}]
 			},
 			"streamSettings": {
 				"network": "ws",
 				"wsSettings": {
-					"path": "/ssemv-club"
+					"path": "/SsemvClub0244"
 				}
 			}
 		},
 		{
 			"port": 8002,
-			"listen": "127.0.0.1",
+			"listen": "0.0.0.0",
 			"protocol": "vless",
 			"settings": {
 				"clients": [{
-					"id": "${UUID}"
+					"id": "fd80f56e-93f3-4c85-b2a8-c77216c509a7"
 				}],
 				"decryption": "none"
 			},
 			"streamSettings": {
 				"network": "ws",
 				"wsSettings": {
-					"path": "/sselv-club"
+					"path": "/SselvClub0245"
 				}
 			}
 		}
